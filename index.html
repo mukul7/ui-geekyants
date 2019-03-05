@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="window" class="hide">
+    <div id="sidebar">
+      <div id="headlogo">GeekyAnts</div>
+      <div id="content">
+        <div id="sidebarmain">
+          <div class="logo">MAIN</div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="fas fa-home"></i></div>
+          <div class="label">DashBoard</div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="far fa-calendar-alt"></i></div>
+          <div class="label">Calender</div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="far fa-envelope"></i></div>
+          <div class="label">Email</div>
+          <div class="dropdownicon"><i class="far fa-caret-square-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="fas fa-cube"></i></div>
+          <div class="label">UI Elements</div>
+          <div class="dropdownicon"><i class="far fa-caret-square-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="fab fa-wpforms"></i></div>
+          <div class="label">Forms</div>
+          <div class="dropdownicon"></div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="fas fa-chart-pie"></i></div>
+          <div class="label">Charts</div>
+          <div class="dropdownicon"><i class="far fa-caret-square-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="fas fa-table"></i></div>
+          <div class="label">Tables</div>
+          <div class="dropdownicon"><i class="far fa-caret-square-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="far fa-smile-beam"></i></div>
+          <div class="label">Icons</div>
+          <div class="dropdownicon"><i class="far fa-caret-square-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="logo"><i class="far fa-compass"></i></i></div>
+          <div class="label">Maps</div>
+          <div class="dropdownicon"></div>
+        </div>
+
+      </div>
+    </div>
+    <div id="right-container">
+      <div id="header" class="row">
+        <div id="dropdown" class="left headericon">
+          <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div id="createdropdown">
+          <button>Ceate <i class="fas fa-sort-down"></i></button>
+        </div>
+        <div id="searchdiv" class="right-margin" style="margin-left: auto;">
+          <input id="searchinput" style="height:30px;" type="text" />
+          <div style="float:right;height:30px"><i class="fas fa-search"></i></div>
+        </div>
+        <div id="languagedropdown" class="right-margin" style="height:30px;">
+          <button><i class="fas fa-flag"></i>&nbspLanguage <i class="fas fa-sort-down"></i></button>
+        </div>
+        <div id="fullscreen" class="right headericon right-margin"><span><i class="far fa-square"></i></span></div>
+        <div id="notification" class="right headericon right-margin"><span><i class="far fa-bell"></i></span></div>
+        <div id="usericon" class="right">
+          <div class="circleimage"></div>
+        </div>
+
+
+
+      </div>
+      <div id="dashcontent" class="row" style="background-color:#f8f8fa;">
+        <div class="row" style="display:flex;height:60px">
+          <div id="dashgreeting" class="left">
+            <h3>Dashboard</h3><br>
+            Welcome to Dashboard
+          </div>
+          <div style="margin-left:auto;">
+            <button id="setting"><i class="fas fa-cog"></i>&nbsp&nbspSettings</button>
+          </div>
+        </div>
+        <div class="row card-container">
+          <div class="card">
+            <div class="row line">
+              <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="stats">
+                <div class="type line"><label class="type">Orders</label></div>
+                <div class="typevalue line score"><span>1,638</span></div>
+              </div>
+              <div class="stats">
+                <div class="row line percent good">+ 12%</div>
+                <div class="row line"><i class="fas fa-arrow-up"></i></div>
+              </div>
+            </div>
+            <div class="row" style="height:75px;padding-top:50px;padding-right:10px">
+              <div style="float:left">Since last month</div>
+              <div style="float:right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row line">
+              <div class="icon"><i class="far fa-sticky-note"></i></div>
+              <div class="stats">
+                <div class="type line"><label class="type">Revenue</label></div>
+                <div class="typevalue line score"><span>52,368</span></div>
+              </div>
+              <div class="stats">
+                <div class="row line percent bad">- 28%</div>
+                <div class="row line"><i class="fas fa-arrow-down"></i></div>
+              </div>
+            </div>
+            <div class="row" style="height:75px;padding-top:50px;padding-right:10px">
+              <div style="float:left">Since last month</div>
+              <div style="float:right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row line">
+              <div class="icon"><i class="far fa-edit"></i></div>
+              <div class="stats">
+                <div class="type line"><label class="type">Average</label></div>
+                <div class="typevalue line score"><span>15.8</span></div>
+              </div>
+              <div class="stats">
+                <div class="row line percent nochange">+ 0%</div>
+                <div class="row line"><i class="fas fa-arrow-up"></i></div>
+              </div>
+            </div>
+            <div class="row" style="height:75px;padding-top:50px;padding-right:10px">
+              <div style="float:left">Since last month</div>
+              <div style="float:right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row line">
+              <div class="icon"><i class="fas fa-suitcase"></i></div>
+              <div class="stats">
+                <div class="type line"><label class="type">Product</label></div>
+                <div class="typevalue line score"><span>2,436</span></div>
+              </div>
+              <div class="stats">
+                <div class="row line percent verygood">+ 84%</div>
+                <div class="row line"><i class="fas fa-arrow-up"></i></div>
+              </div>
+            </div>
+            <div class="row" style="height:75px;padding-top:50px;padding-right:10px">
+              <div style="float:left">Since last month</div>
+              <div style="float:right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="display:flex;flex-wrap: wrap;justify-content: space-evenly;">
+          <div style="padding:15px;margin:20px 20px 20px 0px;background-color:white;width:max-content;border-radius:10px">
+            <div class="row" style="margin-bottom:20px"><h3>Latest Transactions</h3></div>
+            <table id="transactions" cellpadding="20px" cellspacing="20px" border="1" rules="rows" style="border-color:#e7e7e7;">
+              <thead>
+                <tr>
+                  <th>(#Id)</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr>
+                <td>#14256</td>
+                <td><div class="circleimage" style="float:left"></div><div style="float:left;line-height:30px;margin-left:5px">Philip Smead</div></td>
+                <td>15/1/2018</td>
+                <td>$94</td>
+                <td><button style="background: lightgreen; color: white">Delivered</button></td>
+                <td><button style="background: #6767D2; color: white">Edit</button></td>
+              </tr>
+              <tr>
+                <td>#14257</td>
+                <td><div class="circleimage" style="float:left"></div><div style="float:left;line-height:30px;margin-left:5px">Brent Shipley</div></td>
+                <td>16/1/2019</td>
+                <td>$112</td>
+                <td><button style="background: yellow; color: white">Pending</button></td>
+                <td><button style="background: #6767D2; color: white">Edit</button></td>
+              </tr>
+              <tr>
+                <td>#14258</td>
+                <td><div class="circleimage" style="float:left"></div><div style="float:left;line-height:30px;margin-left:5px">Robert Sitton</div></td>
+                <td>17/1/2019</td>
+                <td>$116</td>
+                <td><button style="background: lightgreen; color: white">Delivered</button></td>
+                <td><button style="background: #6767D2; color: white">Edit</button></td>
+              </tr>
+              <tr>
+                <td>#14259</td>
+                <td><div class="circleimage" style="float:left"></div><div style="float:left;line-height:30px;margin-left:5px">Alberto Jackson</div></td>
+                <td>18/1/2019</td>
+                <td>$109</td>
+                <td><button style="background: red; color: white">Cancel</button></td>
+                <td><button style="background: #6767D2; color: white">Edit</button></td>
+              </tr>
+              <tr>
+                <td>#14260</td>
+                <td><div class="circleimage" style="float:left"></div><div style="float:left;line-height:30px;margin-left:5px">David Sanchez</div></td>
+                <td>19/1/2019</td>
+                <td>$120</td>
+                <td><button style="background: lightgreen; color: white">Delivered</button></td>
+                <td><button style="background: #6767D2; color: white">Edit</button></td>
+              </tr>
+            </table>
+          </div>
+          <div id="chatbox">
+            <div id="chat-head" class="row"><h3>Chat</h3></div>
+            <div id="chat">
+              <div class="chatmessage received row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>John Doe</B></div>
+                  <div class="messagetext">fffff jhjhfff hffff f fffffvjvj</div>
+                </div>
+              </div>
+
+              <div class="chatmessage sent row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>Smith</B></div>
+                  <div class="messagetext">jhvjvjv jhjhvjhvj hbjvhjhvjh jhvjhvjvj</div>
+                </div>
+              </div>
+              <div class="chatmessage received row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>John Doe</B></div>
+                  <div class="messagetext">fffff jhjhfff hffff f fffffvjvj</div>
+                </div>
+              </div>
+
+              <div class="chatmessage sent row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>Smith</B></div>
+                  <div class="messagetext">jhvjvjv jhjhvjhvj hbjvhjhvjh jhvjhvjvj</div>
+                </div>
+              </div>
+              <div class="chatmessage received row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>John Doe</B></div>
+                  <div class="messagetext">fffff jhjhfff hffff f fffffvjvj</div>
+                </div>
+              </div>
+
+              <div class="chatmessage sent row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>Smith</B></div>
+                  <div class="messagetext">jhvjvjv jhjhvjschbdj sdjhcbdjh sjhbcjhd hbcsjhdb jhbcsjhbd hvj hbjvhjhvjh jhvjhvjvj</div>
+                </div>
+              </div>
+              <div class="chatmessage received row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>John Doe</B></div>
+                  <div class="messagetext">fffff jhjhfff hffff f fffffvjvj</div>
+                </div>
+              </div>
+
+              <div class="chatmessage sent row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>Smith</B></div>
+                  <div class="messagetext">jhvjvjv jhjhvjhvj hbjvhjhvjh jhvjhvjvj</div>
+                </div>
+              </div>
+              <div class="chatmessage received row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>John Doe</B></div>
+                  <div class="messagetext">fffff jhjhfff hffff f fffffvjvj</div>
+                </div>
+              </div>
+
+              <div class="chatmessage sent row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>Smith</B></div>
+                  <div class="messagetext">jhvjvjv jhjhvjhvj hbjvhjhvjh jhvjhvjvj</div>
+                </div>
+              </div>
+              <div class="chatmessage received row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>John Doe</B></div>
+                  <div class="messagetext">fffff jhjhfff hffff f fffffvjvj</div>
+                </div>
+              </div>
+
+              <div class="chatmessage sent row">
+                <div class="details">
+                  <div class="circleimage"></div>
+                  <div class="messagetime">10:00</div>
+                </div>
+                <div class="message">
+                  <div class="name"><B>Smith</B></div>
+                  <div class="messagetext">jhvjvjv jhjhvjhvj hbjvhjhvjh jhvjhvjvj</div>
+                </div>
+              </div>
+
+            </div>
+            <div id="newmessage">
+              <div><input type="text" placeholder="Enter your text" name="" value=""></div>
+              <div><button>Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="js/script.js"></script>
+</html>
